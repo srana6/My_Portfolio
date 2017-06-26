@@ -11,8 +11,6 @@ var HTMLlinkedin="<li class='flex-item'><span class='orange-text'>LinkedIn:</spa
 
 var HTMLbioPic = "<img src='%data%' id='profile-picture' class='img-circle' width='140' height='140'>";
 
-var HTMLWelcomeMsg = "<span class='welcome-message'>%data%</span>";
-
 var HTMLsumStart="<div class='sum-entry'></div>";
 var HTMLsumDescription="<p class='desc'>%data%</p>";
 
@@ -46,4 +44,4 @@ var HTMLeducationLocation = "<div class='location-text'>%data%</div>";
 var HTMLeducationMajor = "<em><br>Major: %data%</em>";
 var HTMLeducationGpa = "<em><br>GPA: %data%</em>";
 
-var googleMap = "<div id='map'></div>";
+//var googleMap = "<div id='map'></div>";

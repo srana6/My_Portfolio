@@ -22,6 +22,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- AIzaSyCPMd2ek3fsCLxotAPOXrz5SJpf0T_gDuo -->
 
 </head>
 
@@ -84,7 +85,9 @@
   </div>
 
   <div id="mapDiv">
-    <h2>Where I've Lived and Worked</h2>
+      <h2>Places Where I've Lived and Worked</h2>
+      <br>
+      <div id='map'></div>
   </div>
 
   <div id="lets-connect" class="dark-gray">
@@ -109,52 +112,58 @@
   you can't accomplish with vanilla (regular) JavaScript.
 
   <script language="JavaScript" src="js/interaction.js" type="text/javascript"></script>-->
-  <script language="JavaScript" src="js/jQuery.js" type="text/javascript"></script>
-  <script language="JavaScript" src="js/helper.js" type="text/javascript"></script>
-  <script language="JavaScript" src="js/resumeBuilder.js" type="text/javascript"></script>
 
 
-  <script src="js/blueimp-gallery.min.js"></script>
+    <script language="JavaScript" src="js/jQuery.js" type="text/javascript"></script>
+    <script language="JavaScript" src="js/helper.js" type="text/javascript"></script>
+    <script language="JavaScript" src="js/resumeBuilder.js" type="text/javascript"></script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPMd2ek3fsCLxotAPOXrz5SJpf0T_gDuo&callback=initMap">
+    </script>
+
+
+    <script src="js/blueimp-gallery.min.js"></script>
     <script src="js/image-carousel-loader.js"></script>
 
-  <script>
-    if(document.getElementsByClassName('flex-item').length === 0){
-      document.getElementById('topContacts').style.display='none';
-    }
+    <script>
+        if(document.getElementsByClassName('flex-item').length === 0){
+          document.getElementById('topContacts').style.display='none';
+        }
 
-    if(document.getElementsByTagName('h1').length ===0){
-      document.getElementById('header').style.display = 'none';
-    }
+        if(document.getElementsByTagName('h1').length ===0){
+          document.getElementById('header').style.display = 'none';
+        }
 
-    if(document.getElementsByClassName('desc').length === 0){
-      document.getElementById('summary').style.display = 'none';
-    }
+        if(document.getElementsByClassName('desc').length === 0){
+          document.getElementById('summary').style.display = 'none';
+        }
 
-    if(document.getElementsByClassName('work-entry').length === 0){
-      document.getElementById('workExperience').style.display= 'none';
-    }
+        if(document.getElementsByClassName('work-entry').length === 0){
+          document.getElementById('workExperience').style.display= 'none';
+        }
 
-    if(document.getElementsByClassName('project-entry').length === 0){
-      document.getElementById('projects').style.display = 'none';
-    }
+        if(document.getElementsByClassName('project-entry').length === 0){
+          document.getElementById('projects').style.display = 'none';
+        }
 
-    if(document.getElementsByClassName('education-entry').length === 0){
-      document.getElementById('education').style.display = 'none';
-    }
+        if(document.getElementsByClassName('education-entry').length === 0){
+          document.getElementById('education').style.display = 'none';
+        }
 
-    if(document.getElementsByClassName('skills-entry').length === 0){
-      document.getElementById("skillsChart").style.display = 'none';
-    }
+        if(document.getElementsByClassName('skills-entry').length === 0){
+          document.getElementById("skillsChart").style.display = 'none';
+        }
 
-    if(document.getElementsByClassName('flex-item').length === 0){
-      document.getElementById('lets-connect').style.display = 'none';
-    }
+        if(document.getElementsByClassName('flex-item').length === 0){
+          document.getElementById('lets-connect').style.display = 'none';
+        }
 
-    if(document.getElementById('map') === null){
-      document.getElementById('mapDiv').style.display = 'none';
-    }
+        if(document.getElementById('map') === null){
+          document.getElementById('mapDiv').style.display = 'none';
+        }
 
-  </script>
+    </script>
 
 
 

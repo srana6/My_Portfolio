@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  *Bio Object
  */
@@ -206,6 +208,39 @@ summary.display();
 work.display();
 projects.display();
 education.display();
+
+
+/**
+ * Method invoked by google map
+ */
+
+function initMap(){
+    var places = {
+        newDelhi: {lat:28.38, lng:77.12},
+        newjersey: {lat:39.833851,lng:-74.871826},
+        chicago: {lat:41.881832,lng: -87.623177}
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: places.chicago
+    });
+
+
+    var marker = new google.maps.Marker({
+        position: places.newDelhi,
+        map: map
+    });
+    var marker = new google.maps.Marker({
+        position: places.chicago,
+        map: map
+    });
+    var marker = new google.maps.Marker({
+        position: places.newjersey,
+        map: map
+    });
+
+}
 
 /**
  * Array of Images
