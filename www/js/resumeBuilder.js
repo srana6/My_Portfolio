@@ -80,12 +80,12 @@ var work={
   display: function(){
     $("#workExperience").append(HTMLworkStart);
 
-    var formattedCompanyName1 = HTMLworkEmployer1.replace("%data%",work.job1.companyName);
-    var formattedTitle1= HTMLworkTitle1.replace("%data%",work.job1.title);
-    var formattedLocation1= HTMLworkDates1.replace("%data%",work.job1.dates);
-    var formattedDates1= HTMLworkLocation1.replace("%data%",work.job1.location);
+    let formattedCompanyName1 = HTMLworkEmployer1.replace("%data%", work.job1.companyName);
+    let formattedTitle1= HTMLworkTitle1.replace("%data%",work.job1.title);
+    let formattedLocation1= HTMLworkDates1.replace("%data%",work.job1.dates);
+    let formattedDates1= HTMLworkLocation1.replace("%data%",work.job1.location);
     //var ar = work.job1.responsibilities;
-    var formattedDescription1=HTMLworkDescription1.replace("%data%",work.job1.responsibilities);
+    let formattedDescription1=HTMLworkDescription1.replace("%data%",work.job1.responsibilities);
     /*for(var i=0;i<ar.length;i++){
         formattedDescription+=HTMLworkDescription1.replace("%data%",ar[i]);
     }*/
@@ -113,7 +113,7 @@ var work={
  * Projects Done Object
  */
 
-var projects={
+let projects={
   "projectDetails":[{
     "projectName":"InterpreterTap App",
     "url":"https://github.com/srana6/InterpreterTapGit",
@@ -157,7 +157,7 @@ var projects={
  * Education Object
  */
 
-var education={
+let education={
   "educationDetails":[{
     "universityName":"Illinois Institute of Technology",
     "degree":"Masters of Science",
@@ -199,6 +199,18 @@ var education={
 
 };
 
+
+let achievements={
+  certificatePic1:'images/certificate1.jpg',
+    certificatePic2:'images/certificate2.jpg',
+  diplay: function(){
+    var finalPic1 = HTMLAcheivements1.replace("%data%",achievements.certificatePic1);
+    var finalPic2 = HTMLAcheivements2.replace("%data%",achievements.certificatePic2);
+    $(".certificatescol1").append(finalPic1);
+    $(".certificatescol2").append(finalPic2);
+  }
+};
+
 /**
  * Calling of all the display functions
  */
@@ -208,6 +220,7 @@ summary.display();
 work.display();
 projects.display();
 education.display();
+achievements.diplay();
 
 
 /**
@@ -215,27 +228,27 @@ education.display();
  */
 
 function initMap(){
-    var places = {
+    let places = {
         newDelhi: {lat:28.38, lng:77.12},
         newjersey: {lat:39.833851,lng:-74.871826},
         chicago: {lat:41.881832,lng: -87.623177}
     };
 
-    var map = new google.maps.Map(document.getElementById('map'), {
+    let map = new google.maps.Map(document.getElementById('map'), {
         zoom: 4,
         center: places.chicago
     });
 
 
-    var marker = new google.maps.Marker({
+    let marker1 = new google.maps.Marker({
         position: places.newDelhi,
         map: map
     });
-    var marker = new google.maps.Marker({
+    let marker2 = new google.maps.Marker({
         position: places.chicago,
         map: map
     });
-    var marker = new google.maps.Marker({
+    let marker3 = new google.maps.Marker({
         position: places.newjersey,
         map: map
     });
@@ -278,6 +291,8 @@ $(document).ready(function() {
      * Open github and linkedin in new window on click operation
      */
 
+
+
   $(".gitlink").click(function() {
     window.open("https://github.com/srana6","_blank");
   });
@@ -305,5 +320,7 @@ $(document).ready(function() {
     }
     $(window).scroll(navControl);
   });
+
+
 
 });

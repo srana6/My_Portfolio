@@ -9,6 +9,9 @@
     <title>Sumit's Resume</title>
 
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/animate.min.css">
 
@@ -22,8 +25,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- AIzaSyCPMd2ek3fsCLxotAPOXrz5SJpf0T_gDuo -->
-
 </head>
 
 <body unresolved>
@@ -35,10 +36,11 @@
 
   <nav id="nav-bar">
     <ul id="nav-menu">
-      <li><a class="nav-item" href="#workExperience">Work Exp.</a></li>
-      <li><a class="nav-item" href="#projects">Projects</a></li>
-      <li><a class="nav-item" href="#education">Education</a></li>
-      <li><a class="nav-item" href="https://drive.google.com/open?id=0BxLbTr4CdYV6bXA5Yk5KOTRBYms" target="_blank">Resume</a> </li>
+        <li><a class="nav-item" href="#workExperience">Work Exp.</a></li>
+        <li><a class="nav-item" href="#projects">Projects</a></li>
+        <li><a class="nav-item" href="#education">Education</a></li>
+        <li><a class="nav-item" href="#certificates">Achievements</a></li>
+        <li><a class="nav-item" href="https://drive.google.com/open?id=0BxLbTr4CdYV6bXA5Yk5KOTRBYms" target="_blank">Resume</a> </li>
     </ul>
   </nav>
 
@@ -65,27 +67,42 @@
     </div>
 
   <div id="summary" class="sections">
-    <h2 name="summary" class="sub-title animated tada">Summary<br><br></h2>
+    <h2  name="summary" class="sub-title animated tada" style="font-family: 'Lobster', cursive, serif;">Summary<br><br></h2>
   </div>
 
   <div id="workExperience" class="gray sections">
-    <h2 name="work" class="sub-title animated fadeInDown">Work Experience</h2>
+    <h2 name="work" class="sub-title animated fadeInDown" style="font-family: 'Lobster', cursive, serif;">Work Experience</h2>
   </div>
 
   <div id="projects" class="sections">
-    <h2 name="projects" class="sub-title animated lightSpeedIn">Projects</h2>
+    <h2 name="projects" class="sub-title animated lightSpeedIn" style="font-family: 'Lobster', cursive, serif;">Projects</h2>
   </div>
 
   <div id="education" class="gray sections">
-    <h2 name="education" class="sub-title animated rotateIn">Education</h2>
+    <h2 name="education" class="sub-title animated rotateIn" style="font-family: 'Lobster', cursive, serif;">Education</h2>
   </div>
+
+    <!--Acheivements Section -->
+
+    <div id="certificates" class="sections">
+        <h2 name="certificates" class="sub-title animated rotateIn" style="font-family: 'Lobster', cursive, serif;">Achievements</h2>
+        <div data-example-id="simple-thumbnails">
+            <div class="row certificates-entry" id="certificatesrow">
+                <div class='col-md-3 col-xs-6 certificatescol1'>
+
+                </div>
+                <div class='col-md-3 col-xs-6 certificatescol2'>
+                </div>
+            </div>
+        </div>
+    </div>
 
   <div id="skillsChart">
     <h2 class="sub-title">Skills Chart</h2>
   </div>
 
-  <div id="mapDiv">
-      <h2>Places Where I've Lived and Worked</h2>
+  <div id="mapDiv" class="gray sections">
+      <h2 style="font-family: 'Lobster', cursive, serif;">Places Where I've Lived and Worked</h2>
       <br>
       <div id='map'></div>
   </div>
@@ -125,6 +142,7 @@
 
     <script src="js/blueimp-gallery.min.js"></script>
     <script src="js/image-carousel-loader.js"></script>
+
 
     <script>
         if(document.getElementsByClassName('flex-item').length === 0){

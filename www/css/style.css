@@ -4,7 +4,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
-.education-entry, .work-entry, .project-entry, .sum-entry {
+.education-entry, .work-entry, .project-entry, .sum-entry, .certificates-entry {
   padding-left: 5%;
   padding-right: 5%;
 }
